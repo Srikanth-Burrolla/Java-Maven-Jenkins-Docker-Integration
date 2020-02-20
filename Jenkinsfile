@@ -27,7 +27,7 @@ node{
          sshagent(['DEMO']) {
           sh "ssh -o StrictHostKeyChecking=no root@192.168.43.230 docker stop javawebapp || true"
           sh "ssh -o StrictHostKeyChecking=no root@192.168.43.230 docker rm javawebapp || true"
-          sh "ssh  root@192.168.43.230 docker run  -d -p 8080:8080 --name javawebapp parashuraam/java-web-app:${buildNumber}"
+          sh "ssh -o StrictHostKeyChecking=no root@192.168.43.230 docker run  -d -p 8080:8080 --name javawebapp parashuraam/java-web-app:${buildNumber}"
        }
        
     }
