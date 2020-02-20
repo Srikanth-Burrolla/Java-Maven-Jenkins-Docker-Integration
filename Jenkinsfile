@@ -2,7 +2,7 @@ node{
      
     def buildNumber = BUILD_NUMBER
     stage('SCM Checkout'){
-        git url: 'https://github.com/MithunTechnologiesDevOps/java-web-app-docker.git',branch: 'master'
+        git url: 'https://github.com/Parashuraam/Java-Maven-Jenkins-Docker-Integration.git',branch: 'master'
     }
     
      stage(" Maven Clean Package"){
@@ -25,10 +25,12 @@ node{
 	 
 	 stage('Run Docker Image In Dev Server'){        
          sshagent(['DEMO']) {
-          sh "ssh -o StrictHostKeyChecking=no root@192.168.43.230 docker rmi -f  javawebapp || true"
+          sh "ssh -o StrictHostKeyChecking=no root@192.168.43.230 docker stop javawebapp || true"
+          sh "ssh -o StrictHostKeyChecking=no root@192.168.43.230 docker rm javawebapp || true"
           sh "ssh  root@192.168.43.230 docker run  -d -p 8080:8080 --name javawebapp parashuraam/java-web-app:${buildNumber}"
        }
        
     }
-        
+     
+     
 }
