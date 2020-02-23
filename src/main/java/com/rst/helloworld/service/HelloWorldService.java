@@ -25,7 +25,7 @@ public class HelloWorldService {
 		if(StringUtils.isEmpty(name)){
 			return "vCanIT Services, Inc.";
 		}else{
-			return "Hello " + name;
+			return name;
 		}
 		
 	}
