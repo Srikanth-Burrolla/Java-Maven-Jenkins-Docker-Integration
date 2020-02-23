@@ -14,7 +14,7 @@ public class HelloWorldService {
 
 		logger.debug("getDesc() is executed!");
 
-		return "Spring MVC, Maven, Jenkins and Docker Example";
+		return "Learn DevOps Tools - Jenkins, Maven, Git, GitHub, Docker, Kuberneties, Nagios etc. ";
 
 	}
 
