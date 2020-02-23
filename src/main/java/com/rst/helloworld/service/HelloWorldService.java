@@ -14,7 +14,7 @@ public class HelloWorldService {
 
 		logger.debug("getDesc() is executed!");
 
-		return "Learn DevOps Tools - Jenkins, Maven, Git, GitHub, Docker, Kuberneties, Nagios etc. ";
+		return "Learn here DevOps Tools - Jenkins, Maven, Git, GitHub, Docker, Kuberneties, Nagios etc. ";
 
 	}
 
