@@ -40,7 +40,7 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To vCAnIT Services, Madhapur, Hyderabad.</h2>
+			<h2>Welcome To vCanIT Services, Madhapur, Hyderabad.</h2>
 			
 		</div>	
 	</div>
@@ -48,7 +48,7 @@
 
 	<hr>
 	<footer>
-		<p>&copy; vCanIT Services 2019</p>
+		<p>&copy; vCanIT Services 2020</p>
 	</footer>
 </div>
 
