@@ -111,6 +111,21 @@
 	    </snapshotRepository>
 	</distributionManagement> -->
 	
+	<distributionManagement>
+	    <repository>
+		<id>releases</id>
+		<name>netlink-repository-releases</name>
+		<url>http://192.168.1.55:8081/nexus/content/repositories/netlink-repository-releases/</url>
+	    </repository>
+	
+	    <snapshotRepository>
+		<id>snapshots</id>
+		<name>netlink-repository-snapshots</name>
+		<url>http://192.168.1.55:8081/nexus/content/repositories/netlink-repository-snapshots/</url>
+	    </snapshotRepository>
+	
+            </distributionManagement> 
+	
 	<build>
 		<plugins>
 			<plugin>
